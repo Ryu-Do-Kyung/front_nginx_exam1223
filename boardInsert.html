@@ -20,38 +20,31 @@
         </header>
         
         <main>
-            <!-- table>(tr>td*5)*4 -->
+            <form action="#" id="boardFrm" name="boardFrm" method="post">
             <table id="board-list">
-                <!-- <tr>
-                    <th>번호</th>
-                    <th>글제목</th>
-                    <th>작성자</th>
-                    <th>작성일자</th>
-                    <th>조회수</th>
+                <tr>
+                    <td>글제목</td>
+                    <td><input type="text" name="b_title"></td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>클라우드 백엔드 배포실습1</td>
-                    <td>훈련생1</td>
-                    <td>2025-12-21</td>
-                    <td>0</td>
+                    <td>작성자</td>
+                    <td><input type="text" name="b_writer"></td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>클라우드 백엔드 배포실습1</td>
-                    <td>훈련생2</td>
-                    <td>2025-12-21</td>
-                    <td>0</td>
+                    <td>내용</td>
+                    <td><textarea name="b_content" cols="80" rows="10" style="resize: none;"></textarea></td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>클라우드 백엔드 배포실습1</td>
-                    <td>훈련생3</td>
-                    <td>2025-12-21</td>
-                    <td>0</td>
-                </tr> -->
+                    <td>첨부파일</td>
+                    <td><input type="file" name="b_file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="작성" id="addBtn">
+                    </td>
+                </tr>
             </table>
-            <a href="boardInsert.html">게시글 작성</a>
+            </form>
         </main>
 
         <footer>
@@ -62,6 +55,6 @@
 
     <!-- script-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/boardInsert.js"></script>
 </body>
 </html>
